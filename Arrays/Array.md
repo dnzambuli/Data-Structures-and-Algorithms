@@ -1,2 +1,2 @@
 # Arrays
-[arrays](array.jpg/)
+[arrays](./array.jpg/)
