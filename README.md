@@ -8,7 +8,11 @@
 
 ### Example case
 ```
-Kuingia kwa ka-local every party goer gets accepted in if they have a card with their initials on them 
+Kuingia kwa ka-local
+
+every party goer gets accepted in 
+
+if they have a card with their initials on them 
 ```
 
 to store data in this club 
