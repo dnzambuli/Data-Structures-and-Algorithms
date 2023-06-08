@@ -26,10 +26,10 @@ class ArrayStack{
         //     }
         // }
 
-};
+}; // remember the collon after the class definition
 
 int main(){
-    ArrayStack myStack;
+    ArrayStack myStack;// new stack object
     std::cout << myStack.isEmpty()<< '\n';
 
     return 0;
