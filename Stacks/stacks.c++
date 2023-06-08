@@ -30,6 +30,14 @@ class ArrayStack{
             }
             return success;
         }
+        // check the last pushed element
+        int peek(){
+            if(top == -1){
+                std::cout << "Stack is empty: can not retrieve from empty stack";
+                return;
+            }
+            return Item[top];
+        }
 
 }; // remember the collon after the class definition
 
