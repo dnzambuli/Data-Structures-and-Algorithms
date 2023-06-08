@@ -17,17 +17,20 @@ class ArrayStack{
             top = - 1; // make sure the stack starts with the first index being less than 0
         }
         bool isEmpty(){
-            return(top < 0) // if the first index is less than 0 the stack is empty
+            return(top < 0); // if the first index is less than 0 the stack is empty
         }
-        bool push(object newItem){
-            success = false;
-            if(top < MAX_LENGTH - 1){
+        // bool push(object newItem){
+        //     success = false;
+        //     if(top < MAX_LENGTH - 1){
 
-            }
-        }
+        //     }
+        // }
 
-}
+};
 
 int main(){
+    ArrayStack myStack;
+    std::cout << myStack.isEmpty()<< '\n';
+
     return 0;
 }
