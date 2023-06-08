@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // create the constants and types for a new class
 const int MAX_LENGTH = 100; // the max adt array length
@@ -34,7 +35,7 @@ class ArrayStack{
         int peek(){
             if(top == -1){
                 std::cout << "Stack is empty: can not retrieve from empty stack";
-                return;
+                return sqrt(-2);
             }
             return Item[top];
         }
@@ -43,9 +44,14 @@ class ArrayStack{
 
 int main(){
     ArrayStack myStack;// new stack object
+    std::cout << "check new stack is empty"<< '\n';
     std::cout << myStack.isEmpty()<< '\n';
+    std::cout << "confirm new element has been added"<< '\n';
     std::cout << myStack.push(3)<< '\n';
+    std::cout << "confirm stack is nolonger empty"<< '\n';
     std::cout << myStack.isEmpty()<< '\n';
+    std::cout << "check value of last added element"<< '\n';
+    std::cout << myStack.peek()<< '\n';
 
     return 0;
 }
