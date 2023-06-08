@@ -10,7 +10,14 @@ class ArrayStack{
     private:
         Object Item[MAX_LENGTH];
         Object top;
-    
+    // implementing the functions related to stacks
+    public:
+        // instantiate the stack
+        ArrayStack(){
+            top = - 1; // make sure the stack starts with the first index being less than 0
+        }
+        
+
 }
 
 int main(){
