@@ -22,11 +22,11 @@ class ArrayStack{
         bool push(Object newItem){
             bool success = false;
             if(top < MAX_LENGTH - 1){
-                top ++;
-                Item[top] = newItem;
+                top ++; // increase index to 0 first then add a new element
+                Item[top] = newItem; // adding new element
                 success = true;
             }else{
-                std::cout << "stack is full.\n can not add new element" << '\n';
+                std::cout << "stack is full.\n can not add new element" << '\n'; // catch for a full stack
             }
             return success;
         }
