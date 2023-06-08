@@ -22,7 +22,8 @@ class ArrayStack{
         bool push(Object newItem){
             bool success = false;
             if(top < MAX_LENGTH - 1){
-                Item[top + 1] = newItem;
+                top ++;
+                Item[top] = newItem;
                 success = true;
             }else{
                 std::cout << "stack is full.\n can not add new element" << '\n';
@@ -35,7 +36,8 @@ class ArrayStack{
 int main(){
     ArrayStack myStack;// new stack object
     std::cout << myStack.isEmpty()<< '\n';
-    myStack.push(3);
+    std::cout << myStack.push(3)<< '\n';
+    std::cout << myStack.isEmpty()<< '\n';
 
     return 0;
 }
