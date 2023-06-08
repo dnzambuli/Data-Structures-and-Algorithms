@@ -19,18 +19,23 @@ class ArrayStack{
         bool isEmpty(){
             return(top < 0); // if the first index is less than 0 the stack is empty
         }
-        // bool push(object newItem){
-        //     success = false;
-        //     if(top < MAX_LENGTH - 1){
-
-        //     }
-        // }
+        bool push(Object newItem){
+            bool success = false;
+            if(top < MAX_LENGTH - 1){
+                Item[top + 1] = newItem;
+                success = true;
+            }else{
+                std::cout << "stack is full.\n can not add new element" << '\n';
+            }
+            return success;
+        }
 
 }; // remember the collon after the class definition
 
 int main(){
     ArrayStack myStack;// new stack object
     std::cout << myStack.isEmpty()<< '\n';
+    
 
     return 0;
 }
