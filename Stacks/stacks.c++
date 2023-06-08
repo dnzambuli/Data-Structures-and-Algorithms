@@ -35,7 +35,7 @@ class ArrayStack{
 int main(){
     ArrayStack myStack;// new stack object
     std::cout << myStack.isEmpty()<< '\n';
-    
+    myStack.push(3);
 
     return 0;
 }
