@@ -1,3 +1,9 @@
+/*
+ToDO:
+1. createAStack()
+2. destroyAStack()
+*/
+
 #include <iostream>
 #include <cmath>
 
