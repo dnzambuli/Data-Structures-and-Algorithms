@@ -45,7 +45,7 @@ class ArrayStack{
                 std::cout << "Underflow: cannot pop element from an empty stack"<< '\n';
             }
             int popped = Item[top];
-            std::cout << "Last element >> "<<popped<<"\nhas been removed";
+            std::cout << "Last element >> "<<popped<<"\nhas been removed\n";
             top --;
 
         }
@@ -66,6 +66,7 @@ int main(){
     std::cout << "check value of last added element"<< '\n';
     std::cout << myStack.peek()<< '\n';
     myStack.pop();
+    std::cout << myStack.peek()<< '\n';
 
     return 0;
 }
