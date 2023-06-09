@@ -41,7 +41,7 @@ class ArrayStack{
         }
         // remove the last element in the stack
         void pop(){
-            if(Item.isEmpty){
+            if(top < 0){
                 std::cout << "Underflow: cannot pop element from an empty stack"<< '\n';
             }
             int popped = Item[top];
@@ -65,7 +65,7 @@ int main(){
     std::cout << myStack.isEmpty()<< '\n';
     std::cout << "check value of last added element"<< '\n';
     std::cout << myStack.peek()<< '\n';
-    
+    myStack.pop();
 
     return 0;
 }
