@@ -42,5 +42,5 @@ pop()
 ```
 6. retrieve most recent
 ```c++
-retrieve()
+peek() // get the last added element in a stack
 ```
