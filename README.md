@@ -149,3 +149,7 @@ Hello
 1. **Arrays** - a collection datatype to store multiple values of the same type in a variable.
 
 [more on arrays](./Arrays/Array.md)
+
+2. **Stacks** - a collection type that implements the First In Last Out(```FILO```) mode of data retrieval 
+
+[more on stacks](./Stacks/stacks.md)
