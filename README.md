@@ -144,7 +144,11 @@ Hello
 
 ***Notice*** each character in Hello ```H-e-l-l-0``` is stored in successive memory locations
 
-## Collections
+## Collections/ Abstract Data Types
+### What are ADT
+What are ADT? [explanation](./ADT/abstract_data_types.md)
+
+### Types of ADT
 
 1. **Arrays** - a collection datatype to store multiple values of the same type in a variable.
 
