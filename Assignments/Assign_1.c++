@@ -38,13 +38,22 @@ public:
         }
         return success;
     }
+    int peek(){
+        if(top == -1){
+            std::cout << "Error\nTrying to retrieve data from empty stack"<<std::endl;
+            return sqrt(-2);
+        }
+        return Item[top];
+    }
 
 };
 
 int main(){
     Balanced myStack;
     std::cout << myStack.isEmpty()<<std::endl;
-    myStack.push(2);
+    std::cout <<myStack.peek()<<std::endl;
+    myStack.push('2');
     (myStack.isEmpty()!=1)?std::cout <<  "no longer empty"<<std::endl:std::cout <<  "is empty"<<std::endl;
+    std::cout <<myStack.peek()<<std::endl;
     return 0;
 }
