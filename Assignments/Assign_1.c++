@@ -58,13 +58,33 @@ public:
 };
 
 int main(){
-    Balanced myStack;
-    std::cout << myStack.isEmpty()<<std::endl;
-    std::cout <<myStack.peek()<<std::endl;
-    myStack.push('2');
-    (myStack.isEmpty()!=1)?std::cout <<  "no longer empty"<<std::endl:std::cout <<  "is empty"<<std::endl;
-    std::cout <<myStack.peek()<<std::endl;
-    myStack.pop();
-    std::cout <<myStack.isEmpty()<<std::endl;
+    // store user input
+    std::string expression;
+
+    // get user input
+    std::cout << "Enter equation"<<'\n';
+    std::getline(std::cin, expression);
+
     return 0;
+}
+
+
+// function definition
+bool isBalanced(const std::string& expression){
+    // instantiate the stack
+    Balanced myStack;
+
+    // loop through the expression
+    for(char i : expression){
+        if(i == '('|| i == '[' || i == '{'){
+            myStack.push(i); // add new element to the stack and anticipate the closing bracket
+        }else if (i == ')'|| i == ']' || i == '}'){ // means that there should be an opening bracket already in the stack
+            if(myStack.isEmpty()){ // there is no opening bracket
+                return false;
+            }
+            // if there is an opening bracket pop the stack and begin iterating again
+            myStack.pop();
+        }
+    }
+    return myStack.isEmpty(); // 1 means there is an open bracket without a closing bracket and 0 means the brackets are matched
 }
