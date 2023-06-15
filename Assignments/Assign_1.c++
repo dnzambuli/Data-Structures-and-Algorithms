@@ -38,9 +38,10 @@ public:
         }
         return success;
     }
-    int peek(){
+    char peek(){
         if(top == -1){
             std::cout << "Error\nTrying to retrieve data from empty stack"<<std::endl;
+            
             return sqrt(-2);
         }
         return Item[top];
