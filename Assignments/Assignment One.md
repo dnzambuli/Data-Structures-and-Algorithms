@@ -121,9 +121,6 @@ it should print out **“expression braces are not balanced”**
 #include <iostream>
 #include <cmath>
 
-// check if the brackets are matching
-bool isMatching(char openBracket, char closedBracket);
-
 // check for balanced brackets
 bool balanced(const std::string& expression);
 
