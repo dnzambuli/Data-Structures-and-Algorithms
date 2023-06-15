@@ -46,6 +46,14 @@ public:
         }
         return Item[top];
     }
+    void pop(){
+        if(top < 0){
+            std::cout << "Underflow:\tcannot pop from an empty stack"<<'\n';
+        }
+        char popped = Item[top];
+        std::cout << "Last element >> "<<popped<<"\nhas been removed\n";
+        top --;
+    }
 
 };
 
@@ -56,5 +64,7 @@ int main(){
     myStack.push('2');
     (myStack.isEmpty()!=1)?std::cout <<  "no longer empty"<<std::endl:std::cout <<  "is empty"<<std::endl;
     std::cout <<myStack.peek()<<std::endl;
+    myStack.pop();
+    std::cout <<myStack.isEmpty()<<std::endl;
     return 0;
 }
