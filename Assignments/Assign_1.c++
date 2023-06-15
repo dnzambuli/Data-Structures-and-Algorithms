@@ -6,7 +6,10 @@ typedef int Track;
 const int MAX_LEN = 10;
 
 // check for balanced brackets
-bool isBalanced(const std::string& expression);
+bool checkBalanced(const std::string& expression);
+
+// print desired output
+void isBalanced(bool checkBalancedReturnVal);
 
 // create a stack
 class Balanced{
@@ -70,7 +73,7 @@ int main(){
 
 
 // function definition
-bool isBalanced(const std::string& expression){
+bool checkBalanced(const std::string& expression){
     // instantiate the stack
     Balanced myStack;
 
@@ -87,4 +90,12 @@ bool isBalanced(const std::string& expression){
         }
     }
     return myStack.isEmpty(); // 1 means there is an open bracket without a closing bracket and 0 means the brackets are matched
+}
+
+void isBalanced(bool checkBalancedReturnVal){
+    if(checkBalancedReturnVal){
+        std::cout << "Brackets are balanced"<<'\n';
+    }else{
+        std::cout << "Expression braces are not balanced." << std::endl;
+    }
 }
