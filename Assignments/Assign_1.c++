@@ -25,7 +25,7 @@ public:
     }
     // destructor for stack objects
     ~Balanced(){
-        std::cout << "Object has been removed";
+        std::cout << "Object has been removed"<<'\n';
     }
     bool isEmpty(){
         return top < 0; // confirm if the top is -1 which means that the stack is empty 
@@ -67,6 +67,9 @@ int main(){
     // get user input
     std::cout << "Enter equation"<<'\n';
     std::getline(std::cin, expression);
+
+    // confirm working
+    isBalanced(checkBalanced(expression));
 
     return 0;
 }
