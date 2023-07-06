@@ -157,3 +157,11 @@ What are ADT? [explanation](./ADT/abstract_data_types.md)
 2. **Stacks** - a collection type that implements the First In Last Out(```FILO```) mode of data retrieval 
 
 [more on stacks](./Stacks/stacks.md)
+
+3. **Queues** - a collection data type that implements the First In First Out(```FIFO```) mode of data retrieval
+
+[more on queues](./Queues/Queues.md)
+
+4. **Linked Lists** - lists that are able to grow in size as needed and do not require shiftingh of items during insertion or deletion.
+
+[more on linked lists](./LinkedList/link.md)
