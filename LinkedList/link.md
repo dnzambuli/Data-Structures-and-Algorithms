@@ -8,7 +8,7 @@
 
 ### Pointers 
 
-Holders for the ``location`` or ``address`` of a memory cell
+Holders for the ``location`` or ``address`` of a memory cell [more on pointers](./pointers.md)
 
 ```c++
 int *p;
@@ -16,7 +16,7 @@ int *p;
 // statically allocated
 ```
 
-### Address-of Operator
+#### Address-of Operator
 
 Used to place the address of a variable into a pointer variable 
 
@@ -24,7 +24,7 @@ Used to place the address of a variable into a pointer variable
 p = &x;
 ```
 
-### New Operator
+#### New Operator
 
 Used to dynamically allocate a memory cell
 
@@ -49,7 +49,7 @@ p = NULL;
 // a better safeguard
 ```
 
-### Practical Example
+##### Practical Example
 
 1. **Declaring a new pointer and a variable**
 
@@ -98,10 +98,7 @@ x is 6
 memory address p contains 7
 p is 0x167c2c0
 ```
+### Structures
 
-3. **copy a pointer**
-
-```c++
-
-4. 
+Used to store data in a coherent way.[More on structures](structure.md)
 
