@@ -8,7 +8,9 @@
 
 ### Pointers 
 
-Holders for the ``location`` or ``address`` of a memory cell [more on pointers](./pointers.md)
+Holders for the ``location`` or ``address`` of a memory cell 
+
+[More on pointers](./pointers.md)
 
 ```c++
 int *p;
@@ -100,7 +102,9 @@ p is 0x167c2c0
 ```
 ### Structures
 
-Used to store data in a coherent way.[More on structures](structure.md)
+Used to store data in a coherent way.
+
+[More on structures](structure.md)
 
 ### Function Arguments by Reference
 
@@ -110,4 +114,4 @@ This allows functions to write and modify the original objects
 - arguments to functions are passed by ``value``
 - this means they are copied in and out of the function every time the functions are called
 
-[more on Arguments](arguments.md)
+[More on Arguments](arguments.md)
