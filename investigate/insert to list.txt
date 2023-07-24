@@ -1,0 +1,48 @@
+#include <iostream>
+
+
+// inserting element to an array
+int * insert(int arr[],int size, int pos, int element){
+    // start from the end of the array 
+    // end at the position to insert
+    for(int i = size; i >= pos; i --){
+        arr[i] = arr[i-1];
+    }
+    // insert in new gap
+    arr[pos-1] = element;
+    return arr;
+}
+
+// printing an array
+void printArr(int arr[], int size){
+    for(int i = 0; i < size; i ++){
+        std::cout << arr[i]<< " ";
+    }
+    std::cout << '\n';
+}
+
+int main() {
+    // create an array
+    int arr[100] = {0};
+    int i,element, pos, size = 10; 
+    for(i = 0; i < 10; i++ ){
+        arr[i] = i + 1;
+    }
+    
+    // print out array
+    printArr(arr, size);
+    
+    // insert 5o at position 5
+    element = 50;
+    pos = 5;
+
+    int maxLength = sizeof(arr)/ sizeof(int);
+    if(size!=maxLength && pos > 0){
+        insert(arr, size, pos, element);
+    }
+    
+    printArr(arr, size+1);
+    
+
+    return 0;
+}
