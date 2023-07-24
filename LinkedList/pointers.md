@@ -91,3 +91,21 @@ std::cout<< "The value of a is " << a << '\n';
 >> The value of a is 20
 >> 
 ```
+
+# Void Pointer 
+
+To create a void pointer 
+```c++
+void *b;
+```
+
+To reassign a different data type pointer 
+```c++
+char *c;
+b = (char*) c;
+```
+
+# New Installations
+
+- **Constant** address that can not be changed
+- **Pointer to Constant** - content pointed to can not be changed
